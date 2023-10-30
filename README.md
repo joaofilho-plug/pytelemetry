@@ -22,7 +22,7 @@ SERVICE_ENVIRONMENT=dev | prod | None
 ```python
 from pytelemetry import create_logger
 
-logger = get_logger() # returns default python logger
+logger = create_logger('My Controller') # returns default python logger
 
 logger.error('division by zero')
 
